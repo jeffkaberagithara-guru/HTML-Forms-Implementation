@@ -1,1 +1,151 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+    <form action="/login" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="Name" id="name"><strong>First Name:</strong></label>
+            <input type="text" id="name" required placeholder="Jeff">
+            <br><br>
+            <label for="Lnme" id="Lnme"><strong>Last Name:</strong></label>
+            <input type="text" id="Lnme" required placeholder="Kabera">
+            <br><br>
+            <label for="Birthday" id="Birthday"><strong>Date of Birth:</strong></label>
+            <input type="date" id="date" name="bdate">
+            <br><br>
+            <label for="age" id="age"><strong>Age:</strong></label>
+            <input type="age" id="age">
+            <br><br>
+            <label for="gender" id="gender"><strong>Gender:</strong></label>
+            <br>
+            <input type="radio" name="title">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" name="title">
+            <label for="female">Female</label>
+            <br><br>
+            <label for="file" id="file"><strong>Profile Photo:</strong></label>
+            <input type="file">
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Contacts & Address Information</legend>
+            <label for="email" id="email"><strong>Email Address:</strong></label>
+            <input type="email" id="email" required placeholder="jeffkabera@gmail.com">
+            <br><br>
+            <label for="number" id="number"><strong>Phone Number:</strong></label>
+            <input type="tel" id="number" required placeholder="0722123456">
+            <br><br>
+            <label for="website" id="website"><strong>Personal Website:</strong></label>
+            <input type="url" id="website" required placeholder="https://JeffKabera.com">
+            <br><br>
+            <label for="address" id="address"><strong>Street Address:</strong></label>
+            <input type="address" id="address">
+            <br><br>
+            <label for="city" id="city"><strong>City:</strong></label>
+            <input type="city" id="city">
+            <br><br>
+            <label for="country" id="country"><strong>Country:</strong></label>
+            <input type="country" id="country">
+            <br><br>
+            <label for="code" id="code"><strong>ZIP/Postal Code:</strong></label>
+            <input type="code" id="code">
+            <br><br>
+            <label for="time" id="time"><strong>Preferred Contact Time:</strong></label>
+            <input type="time" name="time" id="Time">
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Preferences & Interests</legend>
+            <label for="color" id="color"><strong>Favourite Color:</strong></label>
+            <input type="color" id="color">
+            <br><br>
+            <label for="explvl" id="explvl"><strong>Experience Level (1-10):</strong></label>
+            <input type="range" id="explvl">
+            <br><br>
+            <label for="Birth" id="Birth"><strong>Birth Month:</strong></label>
+            <input type="month" id="Birth">
+            <br><br>
+            <label for="week" id="week"><strong>Available Week:</strong></label>
+            <input type="week" id="week">
+            <br><br>
+            <label for="keywords" id="keywords"><strong>Search Keywords:</strong></label>
+            <input type="search" id="keywords" required placeholder="search keywords">
+            <br><br>
+            <label for="Interests" id="Interests"><strong>Interests(select all that apply):</strong></label>
+            <br>
+            <input type="checkbox" id="Interests">
+            <label for="tech" id="tech">Technology</label>
+            <br>
+            <input type="checkbox" id="sport">
+            <label for="sport" id="sport">Sports</label>
+            <br>
+            <input type="checkbox" id="music">
+            <label for="music" id="music">Music</label>
+            <br>
+            <input type="checkbox" id="travel">
+            <label for="travel" id="travel">Travel</label>
+            <br>
+            <input type="checkbox" id="reading">
+            <label for="reading" id="reading">Reading</label>
+            <br>
+            <input type="checkbox" id="cooking">
+            <label for="cooking" id="cooking">Cooking</label>
+            <br><br>
+            <label for="edctlvl" id="edctlvl"><strong>Education Level:</strong></label>
+            <select name="edctlvl" id="edctlvl">
+                <option value="select disabled hidden">Select Education Level</option>
+            </select>
+            <br><br>
+            <label for="psswrd" id="psswrd"><strong>Create Password:</strong></label>
+            <input type="password" id="psswrd">
+            <br><br>
+            <label for="psswrd" id="psswrd"><strong>Confirm Password:</strong></label>
+            <input type="password" id="psswrd">
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Feedback & Additional Information</legend>
+            <label for="txtarea"><strong>Tell Us About Yourself:</strong></label>
+            <br>
+            <textarea name="textarea" id="textarea" rows="5" cols="30" required placeholder="Write a brief description about yourself.........."></textarea>
+            <br><br>
+            <label for="suggest" id="suggest"><strong>Suggestions For Improvement:</strong></label>
+            <br>
+            <textarea name="suggest" id="suggest" rows="5" cols="30" required placeholder="Any Suggestions or Feedback"></textarea>
+            <br><br>
+            <label for="regdatme" id="regdatme"><strong>Registration Date & Time:</strong></label>
+            <input type="date" id="regdatme">
+            <br><br>
+            <label for="hdyhau" id="hdyhau"><strong>How Did You Hear About Us?</strong></label>
+            <select name="hdyhau" id="hdyhau">
+                <option value="hdyhau">Select Source</option>
+            </select>
+            <br><br>
+            <label for="upldfle" id="upldfle"><strong>Upload Resume (optional):</strong></label>
+            <input type="file" id="upldfle">
+            <br><br>
+            <input type="checkbox" id="subscribe">
+            <label for="subscribe" id="subscribe"><strong>Subscribe To Our Newsletter</strong></label>
+            <br><br>
+            <input type="checkbox" id="terms">
+            <label for="terms" id="terms"><strong>I Agree To The Terms And Conditions</strong></label>
+            <br><br>
+            <input type="checkbox" id="privacy">
+            <label for="privacy" id="privacy"><strong>I Agree To The Privacy Policy</strong></label>
+        </fieldset>
+        <br>
+        <button><strong>Register</strong></button>
+        <button><strong>Clear Form</strong></button>
+    </form>
+</body>
+</html>
